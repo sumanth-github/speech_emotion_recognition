@@ -101,9 +101,9 @@ def get_features_inference(path):
 @st.cache_resource
 def load_artifacts():
     try:
-        model = load_model("emotion_model.h5", compile=False)
-        scaler = joblib.load("standard_scaler.save")
-        encoder = joblib.load("onehot_encoder.save")
+        model = load_model("model/emotion_model.h5", compile=False)
+        scaler = joblib.load("model/standard_scaler.save")
+        encoder = joblib.load("model/onehot_encoder.save")
         return model, scaler, encoder
     except Exception as e:
         st.error(f"Error loading model artifacts: {e}")
