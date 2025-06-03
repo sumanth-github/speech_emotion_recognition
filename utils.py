@@ -10,7 +10,6 @@ from pydub import AudioSegment
 import streamlit as st
 import io
 
-AudioSegment.converter = r"C:\ffmpeg\bin\ffmpeg.exe"
 # Emotion mapping based on encoder categories
 emotion_map = {
     '01': 'neutral',
