@@ -1,3 +1,13 @@
-# speech_emotion_recognition
-The speech emotion recognition is an ML based project that can be used in llms for emotion and sentiment analysis, that can be further used for text recommendation.
-This project uses an ml model that is trained on multiple audio files, and performs analysis on the given data file, and proceeds to display the results in the form of radar graph, and logs each entry into a diary.
+# 🎙️ Speech Emotion Recognition App
+
+A Streamlit app that detects emotions from audio using ML. Built with TensorFlow, Librosa, and scikit-learn.
+
+🚀 Hosted on Hugging Face Spaces.
+
+## Features
+- 🎧 Upload or record audio
+- 🔍 Analyze tone, pitch, and rhythm
+- 📈 Get visual emotion insights
+
+## Demo
+Check out the live app [here](link-will-be-updated-after-deploy).
