@@ -98,7 +98,7 @@ def get_features_inference(path):
         st.error(f"❌ Failed to process audio: {e}")
         raise RuntimeError(f"Audio decode error: {e}")
 
-
+@st.cache_resource
 def load_artifacts():
     try:
         model = load_model("emotion_model.h5", compile=False)
@@ -106,8 +106,9 @@ def load_artifacts():
         encoder = joblib.load("onehot_encoder.save")
         return model, scaler, encoder
     except Exception as e:
-        raise FileNotFoundError("🔴 One or more model artifacts not found. Make sure to train and export them via your notebook.")
-
+        st.error(f"Error loading model artifacts: {e}")
+        raise
+        
 def predict_emotion(audio_path, model, scaler, encoder):
     raw_features = get_features_inference(audio_path)
     scaled_features = scaler.transform(raw_features)
