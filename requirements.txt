@@ -1,0 +1,9 @@
+streamlit
+numpy
+librosa
+joblib
+scikit-learn
+soundfile
+pydub
+tensorflow-cpu
+git+https://github.com/stefanrmmr/streamlit-mic-recorder
