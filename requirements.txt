@@ -1,10 +1,10 @@
 streamlit
-plotly
 numpy
 librosa
 joblib
 scikit-learn
 soundfile
 pydub
+plotly
 tensorflow-cpu
-git+https://github.com/stefanrmmr/streamlit-mic-recorder
+https://github.com/stefanrmmr/streamlit-mic-recorder/archive/refs/heads/main.zip
